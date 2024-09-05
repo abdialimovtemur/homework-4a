@@ -8,12 +8,28 @@
     background-color: #fff;
     padding: 20px;
     position: fixed;
+    display: flex;
+    flex-direction: column;
     inset: 0 auto;
-    border: 3px solid blue;
+    border: 3px solid rgb(239, 43, 43);
     width: 400px;
     z-index: 101;
     transition: all .4s ease;
     transform: translateX(-100%);
+    align-items: end;
+    text-align: start;
+    gap: 20px;
+
+
+    .drower__close{
+        border: none;
+        width: 50px;
+        padding: 10px;
+        border-radius: 10px;
+        background: red;
+        color: white;
+
+    }
 }
 
 .open {

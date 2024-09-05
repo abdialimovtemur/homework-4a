@@ -16,6 +16,15 @@ drower_btn.addEventListener('click',()=>{
     drower.classList.add("show");
 });
 
+
+drower.addEventListener("click", removeDrover);
+drower__close.addEventListener("click", removeDrover);
+
+
+// modal uchun
+
+
+
 modal__btn.addEventListener('click' ,()=> {
     modal__content.style.opacity = "1";
 })
@@ -25,5 +34,3 @@ close__button.addEventListener('click', ()=>{
 
 })
 
-
-drower.addEventListener("click", removeDrover);
