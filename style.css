@@ -35,7 +35,8 @@
     opacity: 1;
 }
 
-.open__modal,.open__modal2 {
+.open__modal,
+.open__modal2 {
     background-color: rgb(13, 116, 13);
     padding: 12px;
     color: white;
@@ -51,24 +52,25 @@
     align-items: center;
 
     .modal__content {
-        width: 500px;
-        height: 300px;
-        border-radius: 3px;
-        padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         position: fixed;
-        border: 3px solid blue;
         z-index: 0;
         transition: all .4s ease;
-
-        background-color: lightblue;
         opacity: 0;
-        transition: opacity 242ms; 
+        transition: opacity 242ms;
 
-        p{
+
+        background-color: #f9f9f9;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        width: 355px;
+        padding: 20px;
+        text-align: center;
+
+        p {
             font-size: large;
             font-weight: 500;
         }
