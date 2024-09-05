@@ -1,15 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.drower__content{
+.drower__content {
     background-color: #fff;
     padding: 20px;
     position: fixed;
     inset: 0 auto;
-    border: 2px solid red;
+    border: 3px solid blue;
     width: 400px;
     z-index: 101;
     transition: all .4s ease;
@@ -21,18 +21,69 @@
 }
 
 
-.drower__dr{
+.drower__dr {
     background-color: rgba(27, 25, 25, 0.804);
     position: absolute;
     inset: 0;
     transition: all .6s ease;
     z-index: -1;
     opacity: 0;
-    
-    
 }
 
-.show{
+.show {
     z-index: 100;
     opacity: 1;
+}
+
+.open__modal,.open__modal2 {
+    background-color: rgb(13, 116, 13);
+    padding: 12px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.modal {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal__content {
+        width: 500px;
+        height: 300px;
+        border-radius: 3px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: fixed;
+        border: 3px solid blue;
+        z-index: 0;
+        transition: all .4s ease;
+
+        background-color: lightblue;
+        opacity: 0;
+        transition: opacity 242ms; 
+
+        p{
+            font-size: large;
+            font-weight: 500;
+        }
+
+        .close__btn {
+            display: flex;
+            justify-content: end;
+
+            button {
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background: red;
+                color: white;
+            }
+        }
+    }
 }
